@@ -1,0 +1,73 @@
+version: 2
+
+sources:
+  - name: legislativo
+    description: "Dados do Congresso Nacional"
+    schema: raw
+
+    tables:
+      - name: leg_cn_cd_proposicoes_2024
+        description: "Tabela de proposições da Câmara dos Deputados do ano de 2024"
+        columns:
+        - name: ultimoStatus
+          description: "ültimo status"	
+        - name: uriPropPosterior
+          description: "Uri da proposição posterior"	
+        - name: uriPropPrincipal
+          description: "Uri da proposição principal"
+        - name: uriPropAnterior
+          description: "Uri da proposição anterior"
+        - name: urlInteiroTeor
+          description: "Uri do interior teor da proposta"	
+        - name: dataApresentacao
+          description: "Data de apresentação da proposição"	
+        - name: codTipo
+          description: "Código do tipo de proposição"
+        - name: keywords
+          description: "Keywords da proposição"	
+        - name: ementa
+          description: "Ementa da proposição"	
+        - name: ano
+          description: "Ano da proposição"	
+        - name: descricaoTipo
+          description: "Descrição do tipo da proposição"	
+        - name: ementaDetalhada
+          description: "Ementa detalhada da proposição"	
+        - name: uri
+          description: "Uri da proposição"	
+        - name: numero
+          description: "Número da proposição"	
+        - name: siglaTipo
+          description: "Sigla do tipo de proposição"	
+        - name: uriOrgaoNumerador
+          description: "Uri do Orgão numerador"	
+        - name: id
+          description: "Id da proposição"
+        - name: ultimoStatus.url
+          description: "Url do último status"	
+        - name: ultimoStatus.apreciacao
+          description: "Último status de apreciação"	
+        - name: ultimoStatus.idSituacao
+          description: "Id do status de apreciação"	
+        - name: ultimoStatus.data
+          description: "Data do Status de apreciação"	
+        - name: ultimoStatus.descricaoSituacao
+          description: "Descrição status de apreciação"	
+        - name: ultimoStatus.despacho
+          description: "Despacho último status"	
+        - name: ultimoStatus.descricaoTramitacao
+          description: "Último status de apreciação"	
+        - name: ultimoStatus.idTipoTramitacao
+          description: "Último status de apreciação"	
+        - name: ultimoStatus.uriOrgao
+          description: "Último status de apreciação"	
+        - name: ultimoStatus.siglaOrgao
+          description: "Último status de apreciação"	
+        - name: ultimoStatus.uriRelator
+          description: "Último status de apreciação"	
+        - name: ultimoStatus.regime
+          description: "Último status de apreciação"	
+        - name: ultimoStatus.sequencia
+          description: "Último status de apreciação"	
+        - name: ultimoStatus.codOrgao
+          description: "Último status de apreciação"	
