@@ -1,0 +1,23 @@
+dbt_modeling:
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: pipeline-441217
+      dataset: raw
+      threads: 4
+      keyfile_json:
+        type: "service_account"
+        project_id: "pipeline-441217"
+        private_key_id: "efe6af7bc227d9dcf954ec3835915f3e848bbdbc"
+        private_key: "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2Z/vkfgh3w9Bo\nPi8S/95LBrqw1lLhDB64Ex/gDaiYXsrA5vok06xvexMvDpmV5xwpKF7FxNj8MW1d\nYAYFoxVFJkvN8K5OoXYw2CM91AbM5gwWJZB3sr/wx4DzuoogGUni6auS28IzG5nM\naeSWDgKBRxlumICbOHpqXvTkQBz3jegU3ttgBp8gAmfC/pyLVZ8RnzJ24DH869Qq\nLR29EBnioS7Ygnj6N8IaR8WmQfHFqwoos3GMAuKdBr+R+Nm36qnmbSgOQEONyg3Q\nxHLrTdxmMJQwTAo0mgEeuYv5aRGbJHaAHrTYtK12QuVTpGr/zTkKInYpFf+NhDLj\ne1Kgw7QhAgMBAAECggEAAamMbt5kKt0+uLh6Wti4mKPwzxxA6Jqg7AoGlBbjxrG0\ndNIWDQBd1a1ANUFTjn1q8QgUZwZ+eLvllICDxYjhMH5jGfcby40mo9bQaWeVgUgG\na6w/dwvKuoHC79WvHRBF71q0TNQSXr9dZTLA2co6ZR22Al9C6sc2vGHtpufbq7jc\nHbqmLyTpCZDPkgtjT5aZ1WxFcXsmrUFhRbMfPGNmkcKXxFaoQiJJEojKXkShP4fe\nqQDPWnHjv9cNoFSAdFJwOvowIvBcbxaOJZADtA7V1os+3UlD03zGUaV90sUB4fZK\neWQ3ixVL0xq2qxdz6OiCO30NsMZpvrxYSID1pEjuAQKBgQD6JnHhvGoZXBEuBuDx\ngcBbmnh+zCArohG5610FA8w74LtitHpF/TQlRl/K8mxGMHf0eqUdfKFIYdlMV8nS\nP+xdrEK2IfiTkuPp8VI8cvhww1rl3iZBRk2ybXaUqKF2+fG24EYR3cLc7JkX1iII\nJMcseYvw7ZMeS7ECk+bsiS6Y4QKBgQC6q/s180vcrkEbXTEgK83gVZDYa87aI4jC\nBTURHG9IxlsENrXA2P2F+SYQwHrmjtOh5ZOWSBIdghftAjFDxFXuLcU9QQr7wy56\nZ+VmjYjLKlp9HzEz35MB5OLAVr73VZPcXyXs5cvQJtjxQeCvNiSHXmw5OVLdVe6c\n7TZAe2xDQQKBgQCQAVHOAgmST84UESGt5mQ2V9bGJ/zdIY/S2AvUtzr7vYQiboN1\nhy5dxwWeb7ClN4HW3EPxla3DXZEawe8Nen837dL5xtSzH/zU0HfnFMixIcVST3D2\nYuKXtSxuqCVLuNfNz46G+oMTa6E2d69fwMxobhCBwkLPTgO42Cw4P0D0AQKBgDQy\nJJMITZ0OKGxTWYoqVW2130N0malLKFFADX+UWNWbiRWbiqS6x+DvMqKaf4L6StjJ\nDcSGsHIJz1DZPRc6zeBEchNXnY+aGuPlKzLKvoY4eIbl8ucTS9LKwlCPsOQNzMNg\n44TjGGNCiYSkLAQx+nLThyVVDwOOpKLCfVn4aORBAoGBAM3xwJsUTT330RTNZ6oI\ncn+xt6gkkrlCkjSl57inZXeAq4N4QkTGgZx/Rm3io852MMxiyhwnbc/2QSSoeGRl\nmWeMvXNHN83wiZve1EtAS4sD3tGLP5D2FgqpD+9fthGg6rpvW8tx7rdTWm18UCmz\naWqMeu4MZTt7T886P9DXQHss\n-----END PRIVATE KEY-----\n"
+        client_email: "data-modeling@pipeline-441217.iam.gserviceaccount.com"
+        client_id: "112645141858069873645"
+        auth_uri: "https://accounts.google.com/o/oauth2/auth"
+        token_uri: "https://oauth2.googleapis.com/token"
+        auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
+        client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/data-modeling%40pipeline-441217.iam.gserviceaccount.com"
+  target: dev
+
+
+
