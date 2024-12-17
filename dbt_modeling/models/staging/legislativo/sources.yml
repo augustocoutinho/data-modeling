@@ -4,6 +4,9 @@ sources:
   - name: legislativo
     description: "Dados do Congresso Nacional"
     schema: raw
+    loader: bigquery
+    meta:
+      owner: "API Câmara dos Deputados"
 
     tables:
       - name: leg_cn_cd_proposicoes_2024
@@ -43,6 +46,8 @@ sources:
           description: "Uri do Orgão numerador"	
         - name: id
           description: "Id da proposição"
+          tests:
+            - not_null
         - name: ultimoStatus.url
           description: "Url do último status"	
         - name: ultimoStatus.apreciacao

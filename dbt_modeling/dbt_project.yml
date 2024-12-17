@@ -23,7 +23,8 @@ models:
       tags: ['staging']
     
     intermediate:
-      materialized: ephemeral
+      schema: intermediate
+      materialized: table
       tags: ['intermediate']
     
     marts:
